@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { COLORS } from "@/constants/colors";
 import { experiences } from "@/data/experience";
-import { SectionTitle } from "./About";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function Experience() {
   return (

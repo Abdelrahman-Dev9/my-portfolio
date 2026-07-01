@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { COLORS } from "@/constants/colors";
 import { projects, ProjectCategory } from "@/data/projects";
 import ProjectCard from "@/components/ui/ProjectCard";
-import { SectionTitle } from "./About";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 type Filter = "all" | ProjectCategory;
 

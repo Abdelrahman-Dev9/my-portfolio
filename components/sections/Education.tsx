@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { COLORS } from "@/constants/colors";
-import { SectionTitle } from "./About";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 const coursework = [
   "Data Structures & Algorithms",

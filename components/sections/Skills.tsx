@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { COLORS } from "@/constants/colors";
 import { skillCategories } from "@/data/skills";
-import { SectionTitle } from "./About";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function Skills() {
   return (
