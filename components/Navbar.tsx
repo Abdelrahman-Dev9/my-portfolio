@@ -13,14 +13,36 @@ const links = [
   { label: "Contact", href: "#contact" },
 ];
 
+const sectionIds = links.map((l) => l.href.slice(1));
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { rootMargin: "-40% 0px -55% 0px" }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   const handleLinkClick = () => setMenuOpen(false);
@@ -45,18 +67,31 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium transition-colors"
-              style={{ color: COLORS.textSecondary }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = COLORS.textPrimary)}
-              onMouseLeave={(e) => (e.currentTarget.style.color = COLORS.textSecondary)}
-            >
-              {link.label}
-            </a>
-          ))}
+          {links.map((link) => {
+            const isActive = activeSection === link.href.slice(1);
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className="relative text-sm font-medium transition-colors"
+                style={{ color: isActive ? COLORS.textPrimary : COLORS.textSecondary }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = COLORS.textPrimary)}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = isActive ? COLORS.textPrimary : COLORS.textSecondary)
+                }
+              >
+                {link.label}
+                {isActive && (
+                  <motion.span
+                    layoutId="nav-indicator"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full"
+                    style={{ backgroundColor: COLORS.accent }}
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </a>
+            );
+          })}
         </div>
 
         {/* Mobile hamburger */}
@@ -104,17 +139,20 @@ export default function Navbar() {
             }}
           >
             <div className="flex flex-col px-6 py-4 gap-4">
-              {links.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={handleLinkClick}
-                  className="text-sm font-medium py-1"
-                  style={{ color: COLORS.textSecondary }}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {links.map((link) => {
+                const isActive = activeSection === link.href.slice(1);
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={handleLinkClick}
+                    className="text-sm font-medium py-1"
+                    style={{ color: isActive ? COLORS.accent : COLORS.textSecondary }}
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         )}
