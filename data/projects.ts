@@ -28,8 +28,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'Express.js', 'PostgreSQL', 'Prisma ORM'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/full-stack-e-commerce-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/10f-nCUS6BLPxO8wBPOpOe5RLjCqYeM3k/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=10f-nCUS6BLPxO8wBPOpOe5RLjCqYeM3k&sz=w1280',
   },
   {
     id: 'gym',
@@ -40,8 +40,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'Bun'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/full-stack-expo-gymm-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1mn9dWbYH0Zz9Qtj-twlP2asTDzdEnhEV/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1mn9dWbYH0Zz9Qtj-twlP2asTDzdEnhEV&sz=w1280',
   },
   {
     id: 'healr',
@@ -52,8 +52,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'Maps SDK', 'Push Notifications'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/expo-healr-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1eWH7Cgb1237YLhdaC48jih3A-6unXV5d/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1eWH7Cgb1237YLhdaC48jih3A-6unXV5d&sz=w1280',
   },
   {
     id: 'uber-clone',
@@ -64,8 +64,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'Maps SDK'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/expo-uber-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1bZW-lCWS7jgXb7UAmkq_zlWEoMsfH2V7/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1bZW-lCWS7jgXb7UAmkq_zlWEoMsfH2V7&sz=w1280',
   },
   {
     id: 'food',
@@ -76,8 +76,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'NativeWind'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/expo-food-delivery',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/12uQSqnYx3lcIo8FaFqDOmcAeDbXzluSf/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=12uQSqnYx3lcIo8FaFqDOmcAeDbXzluSf&sz=w1280',
   },
   {
     id: 'todo-app',
@@ -100,8 +100,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/Emirates-Boarding-Pass-App',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/15d4uGAYbyLUjm8a3Ecjp8_YkbTEgHh3Y/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=15d4uGAYbyLUjm8a3Ecjp8_YkbTEgHh3Y&sz=w1280',
   },
   {
     id: 'sanay3y',
@@ -112,8 +112,8 @@ export const projects: Project[] = [
     category: 'mobile',
     techStack: ['Expo', 'React Native', 'TypeScript', 'NativeWind'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/nestjs-sanay3y-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1aA_HF6AxxLY1O6w2RC1JP6P-iTE3KFuO/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1aA_HF6AxxLY1O6w2RC1JP6P-iTE3KFuO&sz=w1280',
   },
 
   // ── Web ───────────────────────────────────────────────────────────────────
@@ -126,8 +126,8 @@ export const projects: Project[] = [
     category: 'web',
     techStack: ['Next.js 14', 'TypeScript', 'Clerk Auth', 'Supabase', 'shadcn/ui'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/NextJs-Bookified-FullStack-app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1GDAz73fcY64b0FnBT6p17JB0mb4VTdlD/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1GDAz73fcY64b0FnBT6p17JB0mb4VTdlD&sz=w1280',
   },
   {
     id: 'furniro',
@@ -139,8 +139,8 @@ export const projects: Project[] = [
     techStack: ['Next.js', 'TypeScript', 'shadcn/ui', 'Tailwind CSS'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/Furniro',
     liveUrl: 'https://furniroapp.vercel.app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1rgj8DcdhtC8MGVW4nAirzzzemKobizJA/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1rgj8DcdhtC8MGVW4nAirzzzemKobizJA&sz=w1280',
   },
   {
     id: 'shoply',
@@ -152,8 +152,8 @@ export const projects: Project[] = [
     techStack: ['React', 'TypeScript', 'Vite'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/react-shoply-app',
     liveUrl: 'https://react-shoply-app.vercel.app',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1NhXCrtNDAUA1FBXYYEP_wSHwKCedfEvE/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1NhXCrtNDAUA1FBXYYEP_wSHwKCedfEvE&sz=w1280',
   },
   {
     id: 'fashion-app',
@@ -164,8 +164,21 @@ export const projects: Project[] = [
     category: 'web',
     techStack: ['React', 'TypeScript', 'Vite'],
     githubUrl: 'https://github.com/Abdelrahman-Dev9/FashionApp',
-    demoVideo: null,
-    thumbnail: null,
+    demoVideo: 'https://drive.google.com/file/d/1F1WzJZe6SvmBC-DW8K3HGc_XwAdqrzCL/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1F1WzJZe6SvmBC-DW8K3HGc_XwAdqrzCL&sz=w1280',
+  },
+  {
+    id: 'rafeak',
+    name: 'Rafeak',
+    tagline: 'Arabic Price Comparison Web App',
+    description:
+      'Arabic-language price comparison platform that helps users find the best deals across products — built with a fully RTL-friendly UI and deployed on Vercel.',
+    category: 'web',
+    techStack: ['React', 'TypeScript', 'Vite', 'shadcn/ui'],
+    githubUrl: 'https://github.com/Abdelrahman-Dev9/react-Rafeak-app',
+    liveUrl: 'https://react-rafeak-app.vercel.app',
+    demoVideo: 'https://drive.google.com/file/d/1-WWxympcIlY_qELZR2r5w4CxbrzeMR-p/view',
+    thumbnail: 'https://drive.google.com/thumbnail?id=1-WWxympcIlY_qELZR2r5w4CxbrzeMR-p&sz=w1280',
   },
 
   // ── Backend ───────────────────────────────────────────────────────────────
